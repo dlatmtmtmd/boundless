@@ -23,7 +23,6 @@ priority_requestor_addresses = [
         "0x66f68692c03eb9c0656d676f2f4bd13eba40d1b7",
         "0xc4ce4f04b9907a9401a0ed7ef073dffebab52aab"
 ]
-]
 # Estimated peak performance of the proving cluster, in kHz.
 #
 # Used to estimate proving capacity and accept only as much work as the prover can handle. Estimates
