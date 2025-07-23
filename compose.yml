@@ -51,6 +51,9 @@ x-broker-common: &broker-common
   depends_on:
     - rest_api
     - gpu_prove_agent0
+    - gpu_prove_agent1
+    - gpu_prove_agent2
+    - gpu_prove_agent3
     - exec_agent0
     - exec_agent1
     - aux_agent
@@ -160,7 +163,7 @@ services:
   gpu_prove_agent0:
     <<: *agent-common
     mem_limit: 8G
-    cpus: 2
+    cpus: 4
     entrypoint: /app/agent -t prove
     deploy:
       resources:
@@ -173,7 +176,7 @@ services:
   gpu_prove_agent1:
     <<: *agent-common
     mem_limit: 8G
-    cpus: 2
+    cpus: 4
     entrypoint: /app/agent -t prove
     deploy:
       resources:
@@ -186,7 +189,7 @@ services:
   gpu_prove_agent2:
     <<: *agent-common
     mem_limit: 8G
-    cpus: 2
+    cpus: 4
     entrypoint: /app/agent -t prove
     deploy:
       resources:
@@ -199,7 +202,7 @@ services:
   gpu_prove_agent3:
     <<: *agent-common
     mem_limit: 8G
-    cpus: 2
+    cpus: 4
     entrypoint: /app/agent -t prove
     deploy:
       resources:
